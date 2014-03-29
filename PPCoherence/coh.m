@@ -2,7 +2,7 @@ function [r, rm] = coh(f)
 %COH Calculates the coherency function and associated magnitude.
 %   [R, RM] = COH(f) calculates the coherency functions and their
 %   magnitude. f is a structure array returned by XSPECTRUM.
-%   Coherency functions are stored in R as a 3-dimensional upper triandular matrix such that 
+%   Coherency functions are stored in R as a 3-dimensional upper triangular matrix such that 
 %   row and columns index the process and the depth indexes frequencies.
 %   The associated magnitudes are similarly stored in RM.
 %

@@ -47,8 +47,8 @@ elseif length(labels) ~= n
     error('Number of unit labels wrong');
 end
 
-xMin = frequencies(1) - 1;
-xMax = frequencies(end) + 1;
+xMin = frequencies(1);
+xMax = frequencies(end); %Add an offset if need to see boundary values clearly
 yMin = 0;
 yMax = 1;
 
@@ -68,8 +68,6 @@ for i=1:m-1
         
         li(k) = line([xMin xMax],[yL yL]);   %Display significance line
         
-        ylabel([labels{i}],'fontsize',20);
-
         if i==1
             title([labels{j}],'fontsize',20);
         end

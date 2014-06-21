@@ -1,7 +1,7 @@
 neuroblobs
 ==========
 
-A diverse collection of neural network simulations
+A diverse collection of applications related to neural network, learning, vision and signal processing. See the LICENSE file for license information.
 
  1.) Prerequisites
  2.) Building and Installing
@@ -11,7 +11,11 @@ A diverse collection of neural network simulations
 
  This project requires:
   * Matlab, or 
-  * GNU Octave 3.6.1
+  * GNU Octave 3.8.1 with the following packages:
+    - general (> 1.3.4)
+    - signal (> 1.3.0)
+    - control (> 2.6.4)
+    - image (> 2.2.1)
  
  Note, the software is tested only on Ubuntu 12.04, but is likely to work on other platforms as well
  as it does not rely on OS-specific function calls.
@@ -27,4 +31,5 @@ A diverse collection of neural network simulations
  2. stocktrade - Applies point process coherence to the analysis of stock trades
  3. rulkov - Implements a map-based neuron model
  4. rescorla_wagner - The Rescorla-Wagner model of learning
+ 5. reinforce - Predictive Hebbian learning
 

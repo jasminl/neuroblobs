@@ -1,7 +1,7 @@
 neuroblobs
 ==========
 
-A random collection of neural-related simulations
+A diverse collection of neural network simulations
 
  1.) Prerequisites
  2.) Building and Installing
@@ -10,11 +10,15 @@ A random collection of neural-related simulations
 == 1. PREREQUISITES ==
 
  This project requires:
-  * Matlab or GNU Octave 3.6.1
+  * Matlab, or 
+  * GNU Octave 3.6.1
+ 
+ Note, the software is tested only on Ubuntu 12.04, but is likely to work on other platforms as well
+ as it does not rely on OS-specific function calls.
 
 == 2. BUILDING and INSTALLING ==
  
- No special instructions are need to build or install the modules in this package. All you
+ No special instructions are needed to build or install the modules in this package. All you
  need to do is clone the repository.
 
 == 3. APPLICATIONS ==

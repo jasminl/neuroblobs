@@ -10,7 +10,7 @@ lambda = 1:50000:500000;
 L = 10;
 
 %% Load data
-cd '../share/SampleEquityData_US/Trades/';
+cd '../../share/SampleEquityData_US/Trades/';
 CPRN_40218 = dlmread('CPRN_40218.asc', sep);
 GLP_27667  = dlmread('GLP_27667.asc', sep);
 ITT_14081  = dlmread('ITT_14081.asc', sep);
@@ -18,7 +18,7 @@ NTLS_28082 = dlmread('NTLS_28082.asc', sep);
 CWSA_40752 = dlmread('CWSA_40752.asc', sep);  
 IEF_23870  = dlmread('IEF_23870.asc', sep);  
 ITUB_23444 = dlmread('ITUB_23444.asc', sep);
-cd ../../../stocktrade
+cd ../../../src/stocktrade
 
 labels = {'CPRN','GLP','ITT','NTLS','CWSA','IEF','ITUB'};
 

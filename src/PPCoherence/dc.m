@@ -60,24 +60,33 @@ k = 1;  %Index for subplot
 for i=1:m-1
     for j=i+1:n
         x = reshape(cm(i,j,:),[1,d,1]); %Remove 3rd axis
-        
+       
         cp = (i-1)*(n-1) + (j-1);   %Current subplot position
-        s(k) = subplot(m-1,n-1,cp); hold on;
+        s(k) = subplot(m-1, n-1, cp); hold on;
+
         p(k) = plot(frequencies, x);
-        stem(frequencies,x);
+        stem(frequencies, x);
         
-        li(k) = line([xMin xMax],[yL yL]);   %Display significance line
+        li(k) = line([xMin xMax], [yL yL]);   %Display significance line
         
-        if i==1
-            title([labels{j}],'fontsize',20);
+	if ishandle(li(k))
+            %Need to check if handle is valid to circumvent bug in Octave
+	    set(li(k), 'linestyle', ':', 'linewidth', 3, 'color', 'k');
         end
 
-        if j==n
-            ylabel([labels{i}],'fontsize',20);
+        if i == 1
+            title([labels{j}], 'fontsize', 20);
+        end
+
+        if j == n
+            ylabel([labels{i}], 'fontsize', 20);
+        end
+
+	if ishandle(li(k))
+            %Need to check if handle is valid to circumvent bug in Octave
+	    set(s(k), 'xlim', [xMin xMax], 'ylim', [yMin yMax], 'yaxislocation', 'right');
         end
         k = k + 1;
     end
 end
 
-set(li,'linestyle',':','linewidth',3,'color','k');
-set(s,'xlim',[xMin xMax],'ylim',[yMin yMax],'yaxislocation','right');

@@ -32,4 +32,5 @@ A diverse collection of applications related to neural network, learning, vision
  3. rulkov - Implements a map-based neuron model
  4. rescorla_wagner - The Rescorla-Wagner model of learning
  5. reinforce - Predictive Hebbian learning
+ 6. wkl - wkl learning and variants
 
